@@ -38,6 +38,7 @@ body{
     font-size: 15px;
     line-height: 24px;
     color: $text;
+    overflow-x: hidden;
 }
 .container{
     max-width: 1200px;
@@ -97,4 +98,16 @@ body{
            color: #b0bec5;
        }
    } 
+}
+.angle-right{
+    position: relative;
+    padding-left: 15px;
+    &::before{
+        position: absolute;
+        content: '\f105';
+        font-family: 'icomoon';
+        left: 0;
+        color: $green;
+        font-size: 14px;
+    }
 }
